@@ -14,7 +14,7 @@ pipeline {
       }
       steps {
         checkout scm
-        container('node:10.10.0-alpine') {
+        container('nodejs') {
           echo 'Hello World!'   
           sh 'node --version'
         }
